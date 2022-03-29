@@ -18,121 +18,19 @@
         <!-- App css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
         <style> 
-            body, .btn {
+            body {
                 font-family: 'Bai Jamjuree', sans-serif;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 1.5;
                 background-color: #fff;
-                background: url('{{ asset("images/pikul-white.png") }}') repeat, #D5C5D8;
+                background: url('{{ asset("images/pikul-white.png") }}') repeat, #662c81;
                 -webkit-text-size-adjust: 100%;
                 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             }   
-            .logo {height: 40px;}
-            .nav-title { 
-                line-height: 1;
-                color: #7d7020;
-                font-weight: 500;
-            }
-            .font-13 {font-size: 13px;}
-            footer {
-                background: #463A48;
-                color: white;
-                min-height: 150px;
-                font-family: "Bai Jamjuree", sans-serif;
-            }
-            footer h3 {
-                font-size: 1rem;
-                text-align: center; 
-                padding-bottom: 0.5rem;
-                border-bottom: solid 0.5px #ffc107;
-            }
-            footer li a {
-                color: #f8f9fa !important;
-                text-decoration: none !important;
-            }
-             
-            .carousel-inner {
-                max-height: 400px;
-            }
-            .title-content {
-                font-weight: 600;
-                color: #6f42c1;
-            }
-            .white-space-normal-1 { 
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-            .white-space-normal {
-                line-height: 1.5em;
-                height: 44px;
-                width: 100%;
-                white-space: normal;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            .hero {
-                height: 250px;
-                text-align: center;
-                color: #f8f9fa;
-                font-family: "Bai Jamjuree", sans-serif;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            .btn {background: #d5c5d8; padding: 0.49rem 0.75rem;}
-            .hero {
-                background: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 57, 71, 0.7)), to(rgba(69, 57, 71, 0.9))), url("{{ asset('images/hero.jpg') }}") center/cover repeat;
-                background: linear-gradient(rgba(69, 57, 71, 0.7), rgba(69, 57, 71, 0.9)), url("{{ asset('images/hero.jpg') }}") center/cover repeat;
-            }
-            .hero .hero-texts {
-                position: relative;
-                top: 50%;
-                -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-            }
-            .content-file table{ width: 100%; }    
-            .box-filter {
-                background: #ddd;
-                padding: 1.5rem 1rem;
-            }
-            b {color: #95549E;}
-            section {background: #f8f9fa;}
-            .box-list {
-                border: 1px solid #ddd;
-                background: #fff;
-                border-radius: 0.25rem;
-                box-shadow: 2px 2px 5px #ddd;
-            }
-            a {
-                color: #212529;
-                text-decoration: inherit;
-                background-color: transparent;
-            }
-            a:hover {
-                color: #727272;
-                text-decoration: inherit;
-            }
-            .img-carousel-o {
-                height: 400px; 
-                background-position: center; 
-                background-size: cover;
-            }
-            .modal-close-01 {
-                font-size: 30px;
-                border-radius: 1.25rem;
-                position: absolute;
-                right: -10px;
-                top: -15px;
-            }
-            iframe, object {width: 90%; height: 700px;} 
-            @media (max-width: 600px){
-                .img-carousel-o { height: 130px; }
-                iframe, object {width: 100%; height: 500px;} 
-            }
+            .btn { background: #d5c5d8; font-size: 14px; font-weight: 400; padding: 0.49rem 0.75rem;} 
         </style>
         @yield('style')
     </head> 
@@ -185,6 +83,7 @@
                             <a class="dropdown-item" href="{{ route('book') }}">หนังสือและวารสารสำนักฯ</a>
                             <a class="dropdown-item" href="{{ route('research') }}">งานวิจัยและบทความ</a>
                             <a class="dropdown-item" href="{{ route('learning') }}">แหล่งเรียนรู้</a> 
+                            <a class="dropdown-item" href="{{ route('activity') }}">โครงการ/กิจกรรม</a> 
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -244,7 +143,7 @@
                                 <a href="http://website2021.lopburi.go.th/" target="_blank">จังหวัดลพบุรี</a>
                             </li>
                             <li>
-                                <a href="https://www.lopburi.org/culture-lopburi" target="_blank">เที่ยวเชิงวัฒนธรรม จังหวัดลพบุรี</a>
+                                <a href="https://www.lopburi.org/culture-lopburi" target="_blank">สถานที่ท่องเที่ยวเชิงวัฒนธรรม จังหวัดลพบุรี</a>
                             </li>
                         </ul>
                     </div>

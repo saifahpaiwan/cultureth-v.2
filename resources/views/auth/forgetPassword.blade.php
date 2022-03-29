@@ -25,7 +25,7 @@
         }  
         .bg-main {  
           background-color: #fff;
-          background: url("{{ asset('images/pikul-white.png') }}") repeat, #95549ec2;
+          background: url("{{ asset('images/pikul-white.png') }}") repeat, #662c81;
           -webkit-text-size-adjust: 100%;
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
