@@ -95,7 +95,7 @@ a:hover {
 }
 iframe, object {width: 90%; height: 700px;} 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.5);
+    color: #000;
     font-weight: 600;
 }
 
