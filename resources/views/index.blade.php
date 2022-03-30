@@ -140,7 +140,7 @@
                     @if(isset($data['Query_book']))
                             @if(count($data['Query_book'])>0)
                                 @foreach($data['Query_book'] as $row)
-                                    <div class="col-md-4 p-1"> 
+                                    <div class="col-6 col-md-4 p-1"> 
                                         <a href="{{ route('book.view', [$row->id]) }}">
                                             <div class="card mb-2">
                                                 <img class="card-img-top" src="{{ asset('images/book').'/'.$row->book_image_desktop }}" alt="Card image cap">
@@ -167,7 +167,7 @@
                     @if(isset($data['Query_research']))
                             @if(count($data['Query_research'])>0)
                                 @foreach($data['Query_research'] as $row)
-                                    <div class="col-md-4 p-1"> 
+                                    <div class="col-6 col-md-4 p-1"> 
                                         <a href="{{ route('research.view', [$row->id]) }}">
                                             <div class="card mb-2">
                                                 <img class="card-img-top" src="{{ asset('images/research').'/'.$row->research_image_desktop }}" alt="Card image cap">
