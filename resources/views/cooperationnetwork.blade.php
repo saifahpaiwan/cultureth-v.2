@@ -20,7 +20,7 @@
     <div class="container bg-white">  
         <section class="hero">
             <div class="hero-texts">
-                <h1 class="display-4">  เครือข่ายความร่วมมือ  </h1> 
+                <h1 class="">  เครือข่ายความร่วมมือ  </h1> 
             </div>
         </section>
         <section class="">

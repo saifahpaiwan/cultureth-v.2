@@ -38,7 +38,7 @@
     <div class="container bg-white">  
         <section class="hero">
             <div class="hero-texts">
-                <h1 class="display-4"> หนังสือและวารสารสำนักฯ </h1> 
+                <h1 class=""> หนังสือและวารสารสำนักฯ </h1> 
             </div>
         </section>
         <section class=""> 
@@ -58,12 +58,13 @@
                 <div class="col-md-12 pb-4">  
                     @if(isset($data['result']->file_pdf))
                         @if(!empty($data['result']->file_pdf))
-                            <div class="text-center mb-3">  
-                                <object data="{{ asset('images/news/pdf').'/'.$data['result']->file_pdf }}" type="application/pdf" width="100%" height="100%">
-                                    <div><b>เบราว์เซอร์นี้ไม่สนับสนุน PDF กรุณาดาวน์โหลดไฟล์ PDF เพื่อดู</b> </div>
-                                    <a class="btn mt-1" href="{{ asset('images/news/pdf').'/'.$data['result']->file_pdf }}">Download PDF</a>  
-                                </object>
+                            <div class="text-center mb-3 d-none d-sm-block">  
+                                <object data="{{ asset('images/news/pdf').'/'.$data['result']->file_pdf }}" type="application/pdf" width="100%" height="100%"> </object>
                             </div> 
+                            <div class="text-center mb-3 d-block d-sm-none">  
+                                <div><b>เบราว์เซอร์นี้ไม่สนับสนุน PDF กรุณาดาวน์โหลดไฟล์ PDF เพื่อดู</b> </div>
+                                <a class="btn mt-1" href="{{ asset('images/news/pdf').'/'.$data['result']->file_pdf }}">Download PDF</a>
+                            </div>   
                         @endif
                     @endif
                     <?php 

@@ -20,7 +20,7 @@
     <div class="container bg-white">  
         <section class="hero">
             <div class="hero-texts">
-                <h1 class="display-4"> แหล่งเรียนรู้ </h1> 
+                <h1 class=""> แหล่งเรียนรู้ </h1> 
             </div>
         </section>
         <section class="">

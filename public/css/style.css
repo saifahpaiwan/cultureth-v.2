@@ -102,4 +102,5 @@ iframe, object {width: 90%; height: 700px;}
 @media (max-width: 600px){
     .img-carousel-o { height: 130px; }
     iframe, object {width: 100%; height: 500px;} 
+    .hero { height: 150px;}
 }

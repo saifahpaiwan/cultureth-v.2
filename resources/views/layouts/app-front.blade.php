@@ -61,7 +61,7 @@
                             <a class="dropdown-item" href="{{ route('about.symbol') }}">ตราสัญลักษณ์</a>
                             <a class="dropdown-item" href="{{ route('about.policy') }}">นโยบายและแผนยุทธศาสตร์</a>
                             <a class="dropdown-item" href="{{ route('cooperationnetwork') }}">เครือข่ายความร่วมมือ</a>
-                            <a class="dropdown-item" href="{{ route('reportannual') }}">รายงานประจำปี</a> 
+                            <a class="dropdown-item" href="{{ route('reportannual') }}">ประกันคุณภาพการศึกษา/รายงานประจำปี</a> 
                         </div>
                     </li>
                     <li class="nav-item dropdown">

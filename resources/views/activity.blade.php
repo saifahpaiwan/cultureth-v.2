@@ -14,7 +14,7 @@
     <div class="container bg-white">  
         <section class="hero">
             <div class="hero-texts">
-                <h1 class="display-4"> โครงการ/กิจกรรม </h1> 
+                <h1 class=""> โครงการ/กิจกรรม </h1> 
             </div>
         </section>
         <section class="">

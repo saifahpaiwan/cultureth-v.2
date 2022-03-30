@@ -270,7 +270,7 @@
                                             <li> <a href="{{ route('pagesedit', [3]) }}"> ตราสัญลักษณ์ </a></li>
                                             <li> <a href="{{ route('pagesedit', [4]) }}"> นโยบายและแผนยุทธศาสตร์ </a></li>
                                             <li> <a href="{{ route('network.list') }}"> เครือข่ายความร่วมมือ </a></li>
-                                            <li> <a href="{{ route('annual.list') }}"> รายงานประจำปี </a></li> 
+                                            <li> <a href="{{ route('annual.list') }}"> ประกันคุณภาพการศึกษา/รายงานประจำปี </a></li> 
                                         </ul>
                                     </li> 
                                     <li> 

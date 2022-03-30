@@ -39,7 +39,7 @@
     <div class="container bg-white">  
         <section class="hero">
             <div class="hero-texts"> 
-                <h1 class="display-4">@if(isset($data['retule']->title)) {{ $data['retule']->title }} @endif</h1>
+                <h1 class="">@if(isset($data['retule']->title)) {{ $data['retule']->title }} @endif</h1>
                 <h2>@if(isset($data['retule']->sub_title)) {{ $data['retule']->sub_title }} @endif</h2>
             </div>
         </section>
@@ -48,13 +48,14 @@
             <div class="col-md-12"> 
                 <div class="content-file pt-4 pb-4">
                     @if(isset($data['retule']->file_pdf))
-                        @if(!empty($data['retule']->file_pdf))
-                            <div class="text-center mb-3">  
-                                <object data="{{ asset('images/page_edit/pdf').'/'.$data['retule']->file_pdf }}" type="application/pdf" width="100%" height="100%">
-                                    <div><b>เบราว์เซอร์นี้ไม่สนับสนุน PDF กรุณาดาวน์โหลดไฟล์ PDF เพื่อดู</b> </div>
-                                    <a class="btn mt-1" href="{{ asset('images/page_edit/pdf').'/'.$data['retule']->file_pdf }}">Download PDF</a>  
-                                </object>
+                        @if(!empty($data['retule']->file_pdf)) 
+                            <div class="text-center mb-3 d-none d-sm-block">  
+                                <object data="{{ asset('images/page_edit/pdf').'/'.$data['retule']->file_pdf }}" type="application/pdf" width="100%" height="100%"> </object>
                             </div> 
+                            <div class="text-center mb-3 d-block d-sm-none">  
+                                <div><b>เบราว์เซอร์นี้ไม่สนับสนุน PDF กรุณาดาวน์โหลดไฟล์ PDF เพื่อดู</b> </div>
+                                <a class="btn mt-1" href="{{ asset('images/page_edit/pdf').'/'.$data['retule']->file_pdf }}">Download PDF</a>
+                            </div>  
                         @endif
                     @endif
                     <?php 
